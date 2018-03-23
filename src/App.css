@@ -1,0 +1,43 @@
+#viewDetails{
+  background-color: #fc461e;
+  border-color: #fc461e;
+}
+
+#viewDetails:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.veg-dot{
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.nonveg-dot{
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.chilli{
+  height: 20px;
+  width: 20px;
+  
+}
+.redChilli{
+  margin-right: 50px;
+}
+
+.lib-row.lib-header {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+.lib-row.lib-desc {
+  font-family: Lato;
+  font-size: 20px;
+}
