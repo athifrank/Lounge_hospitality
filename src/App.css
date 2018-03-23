@@ -41,3 +41,7 @@
   font-family: Lato;
   font-size: 20px;
 }
+
+.p-3{
+  border: 10px solid rgba(0,0,0,.125);
+}
