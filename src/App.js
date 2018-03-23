@@ -9,19 +9,19 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const url = 'http://texpertise.in/data.php';
-    fetch(url).then(res => res.json()).then((res) => { this.setState({ data: res }) });
+    await fetch(url).then((res)=>res.json()).then((response)=>{this.setState({data:response})});
   }
+
 
 
   render() {
     const value = this.state.data;
-    console.log(value);
     return (
       <div className="container">
         <div className="row">
-          {this.state.data.map((val, key) => {
+          {value.map((val, key) => {
             return (
               <div className="card p-3 col-12 col-md-6 col-lg-3" key={key}>
                 <div className="card-img">
